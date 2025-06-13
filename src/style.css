@@ -15,8 +15,18 @@
 }
 
 :root {
+    /* Colors */
     --color-bg-body: #F4D04E;
     --color-bg-main: #FFFFFF;
     --color-text: #6B6B6B;
-    --color-title: #111111
+    --color-title: #111111;
+    
+    /* Typo */
+    --font-base: 'Figtree';
+
+    /* Spacing */
+    --spacing-50: 4px;
+    --spacing-100: 8px;
+    --spacing-150: 24px;
+    --spacing-300: 24px;
 }
