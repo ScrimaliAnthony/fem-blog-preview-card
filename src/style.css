@@ -21,12 +21,13 @@
     --color-text: #6B6B6B;
     --color-title: #111111;
     
-    /* Typo */
+    /* Typography */
     --font-base: 'Figtree';
+    --font-weight-base: 500;
 
     /* Spacing */
     --spacing-50: 4px;
     --spacing-100: 8px;
-    --spacing-150: 24px;
+    --spacing-150: 12px;
     --spacing-300: 24px;
 }
