@@ -17,17 +17,123 @@
 :root {
     /* Colors */
     --color-bg-body: #F4D04E;
-    --color-bg-main: #FFFFFF;
+    --color-bg-card: #FFFFFF;
     --color-text: #6B6B6B;
     --color-title: #111111;
     
     /* Typography */
     --font-base: 'Figtree';
-    --font-weight-base: 500;
+    
+    /* Style */
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+
+    /* Size */
+    --font-size-xs: 0.75rem;  /* 12px */
+    --font-size-md: 0.875rem; /* 14px */
+    --font-size-xl: 1.25rem; /* 20px */
+    
+    /* Weights */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
 
     /* Spacing */
-    --spacing-50: 4px;
-    --spacing-100: 8px;
-    --spacing-150: 12px;
-    --spacing-300: 24px;
+    --spacing-50: 0.25rem;  /* 4px */
+    --spacing-100: 0.5rem;  /* 8px */
+    --spacing-150: 0.75rem; /* 12px */
+    --spacing-200: 1rem;    /* 16px */
+    --spacing-300: 1.5rem;  /* 24px */
+
+    /* Radius */
+    --radius-xs: 4px;
+    --radius-sm: 10px;
+    --radius-md: 20px;
+}
+
+body {
+  margin: 0;
+  padding: var(--spacing-300);
+  min-height: 100vh;
+  background-color: var(--color-bg-body);
+  font-family: var(--font-base);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.card {
+  background-color: var(--color-bg-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-300);
+  border-radius: var(--radius-md);
+  border: 1px solid black;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
+}
+
+.card__illustration-container {
+  max-width: 17.5rem;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-300);
+}
+
+.card__illustration {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card__main > * {
+  margin-bottom: var(--spacing-150);
+}
+
+.card__tag {
+  display: inline-block;
+  background-color: var(--color-bg-body);
+  padding: var(--spacing-50) var(--spacing-150);
+  border-radius: var(--radius-xs);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.card__publish-date {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.card__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.card__description {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-300);
+  color: var(--color-text);
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-150);
+}
+
+.card__avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__name {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-extrabold);
 }
