@@ -1,7 +1,7 @@
 {
   "name": "fem-blog-preview-card",
   "version": "1.0.0",
-  "description": "Integration du challenge blog preview card de frontend mentor de la manière la plus minimal possible",
+  "description": "Integration du challenge blog preview card de frontend mentor de manière minimaliste",
   "license": "ISC",
   "author": "Anthony Scrimali",
   "type": "commonjs",
