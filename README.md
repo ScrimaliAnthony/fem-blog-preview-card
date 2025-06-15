@@ -12,7 +12,7 @@ I created this project for two main reasons:
 ## 🔗 Links
 
 * [GitHub Repository](https://github.com/ScrimaliAnthony/fem-blog-preview-card)
-* [Live Site (Vercel)](A venir)
+* [Live Site (Vercel)](https://fem-blog-preview-card-kohl.vercel.app/)
 
 ## 🚀 Tech Stack
 
