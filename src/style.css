@@ -151,7 +151,7 @@ body {
 @media (min-width: 1440px) {
 
   .card {
-    max-width: 384px;
+    max-width: calc(384px - 24px);
   }
 
   .card__tag {
